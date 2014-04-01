@@ -27,7 +27,7 @@ $minimal_apt_get_install logrotate
 
 ## Install the SSH server.
 $minimal_apt_get_install openssh-server
-mkdir /var/run/sshd
+#mkdir /var/run/sshd
 mkdir /etc/service/sshd
 cp /build/runit/sshd /etc/service/sshd/run
 cp /build/config/sshd_config /etc/ssh/sshd_config
